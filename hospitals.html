@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Healdi - Medical & Health Template">
+
+    <!-- ========== Page Title ========== -->
+    <title>MediHelp</title>
+
+    <!-- ========== Favicon Icon ========== -->
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+    <!-- ========== Start Stylesheet ========== -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="assets/css/themify-icons.css" rel="stylesheet" />
+    <link href="assets/css/flaticon-set.css" rel="stylesheet" />
+    <link href="assets/css/magnific-popup.css" rel="stylesheet" />
+    <link href="assets/css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="assets/css/owl.theme.default.min.css" rel="stylesheet" />
+    <link href="assets/css/animate.css" rel="stylesheet" />
+    <link href="assets/css/bootsnav.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet" />
+    <!-- ========== End Stylesheet ========== -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5/html5shiv.min.js"></script>
+      <script src="assets/js/html5/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ========== Google Fonts ========== -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        /* Button used to open the contact form - fixed at the bottom of the page */
+        .open-button {
+            background-color: #04AA6D;
+            color: white;
+            padding: 16px 20px;
+            border: none;
+            cursor: pointer;
+            opacity: 0.8;
+            bottom: 23px;
+            right: 28px;
+            width: 280px;
+            margin-top: 50px;
+            width: 200px;
+        }
+
+        /* The popup form - hidden by default */
+        .form-popup {
+            display: none;
+            position: fixed;
+            bottom: 100px;
+            right: 100px;
+            border: 3px solid #05975f;
+            z-index: 9;
+        }
+
+        /* Add styles to the form container */
+        .form-container {
+            max-width: 300px;
+            padding: 10px;
+            background-color: rgb(255, 255, 255);
+        }
+
+        /* Full-width input fields */
+        .form-container input[type=text],
+        .form-container input[type=password] {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            border: none;
+            background: #f1f1f1;
+        }
+
+        /* When the inputs get focus, do something */
+        .form-container input[type=text]:focus,
+        .form-container input[type=password]:focus {
+            background-color: #ddd;
+            outline: none;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Preloader Start -->
+    <div class="se-pre-con"></div>
+    <!-- Preloader Ends -->
+
+    <!-- Header 
+    ============================================= -->
+    <header id="home">
+
+        <!-- Start Navigation -->
+        <nav class="navbar navbar-default navbar-fixed navbar-transparent white bootsnav">
+
+
+            <div class="container-full">
+
+
+                <!-- Start Header Navigation -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="index.html" style="
+                    padding-top: 10px;
+                ">
+                        <img src="assets/img/logo2.jpg" class="logo logo-display" alt="Logo" id="logo2">
+                        <img src="assets/img/logo1.png" class="logo logo-scrolled" alt="Logo">
+                    </a>
+                </div>
+                <!-- End Header Navigation -->
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="navbar-menu">
+                    <ul class="nav navbar-nav navbar-center" data-in="#" data-out="#">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="active">
+                            <a href="hospitals.html">Hospitals</a>
+                        </li>
+                        <li>
+                            <a href="doctors.html">Doctors</a>
+                        </li>
+                        <li>
+                            <a href="departments.html">Departments</a>
+                        </li>
+                        <li>
+                            <a href="about-us.html">About Us</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact Us</a>
+                        </li>
+                        <li>
+                            <a data-animation="animated fadeInUp" class="btn btn-md btn-gradient" id="loginbtn"
+                                href="login.html">Login/Register</a>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div>
+        </nav>
+        <!-- End Navigation -->
+
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Breadcrumb 
+    ============================================= -->
+    <div class="breadcrumb-area bg-gradient text-center">
+        <!-- Fixed BG -->
+        <div class="fixed-bg" style="background-image: url(assets/img/shape/9.png);"></div>
+        <!-- Fixed BG -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <h1>Hospitals</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Breadcrumb -->
+
+    <!-- Start About
+    ============================================= -->
+    <div class="about-area bg-gray default-padding relative">
+
+        <!-- Shape -->
+        <div class="shape-left-top shape">
+            <img src="assets/img/shape/1.png" alt="Shape">
+        </div>
+        <!-- End Shape -->
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-6 thumb">
+                    <div class="thumb-box">
+                        <img src="assets/img/hospital/hosp1.jpg" alt="Thumb">
+                    </div>
+                </div>
+
+                <div class="col-lg-6 info">
+                    <h5>Has been working since 1996</h5>
+                    <h2>Fortis Hospital Gurgaon</h2>
+                    <p>
+                        Established in 1996, brand Fortis now occupies 55 facilities in line, offering health facilities
+                        within India and abroad. Famous as the ‘Mecca of Healthcare’ for the Asia Pacific region, this
+                        health institute is graded as the second in a global.
+                    </p>
+                    <ul>
+                        <li>
+                            <div class="icon">
+                                <i class="flaticon-calendar"></i>
+                            </div>
+                            <div class="content">
+                                <h5>300+ Beds Available</h5>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <i class="flaticon-drugs"></i>
+                            </div>
+                            <div class="content">
+                                <h5>100+ Doctors Availabe</h5>
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="open-button" onclick="openForm()"><strong>Book Bed</strong></button>
+
+                    <div class="form-popup" id="myForm">
+                        <form action="bed.php" class="form-container">
+
+                            <form action="bed.php" method="POST" class="contact-form">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="form-group">
+                                            <input class="form-control" id="name" name="name" placeholder="Name"
+                                                type="text" required>
+                                            <span class="alert-error"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input class="form-control" id="phone" name="phone" placeholder="Phone"
+                                                type="text" required>
+                                            <span class="alert-error"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input class="form-control" id="bed" name="bed" placeholder="No. of Beds"
+                                                type="number" required>
+                                            <span class="alert-error"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn">Book</button>
+                                <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
+                            </form>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="about-area bg-gray default-padding relative">
+
+        <!-- Shape -->
+        <div class="shape-left-top shape">
+            <img src="assets/img/shape/1.png" alt="Shape">
+        </div>
+        <!-- End Shape -->
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-6 thumb">
+                    <div class="thumb-box">
+                        <img src="assets/img/hospital/hosp2.jpg" alt="Thumb">
+                    </div>
+                </div>
+
+                <div class="col-lg-6 info">
+                    <h5>Has been working since 2000</h5>
+                    <h2>Max Super Speciality Hospital, Saket, New Delhi</h2>
+                    <p>
+                        Max Hospital, Saket was founded in 2006. This Hospital is recognized as NABH & NABL under Super
+                        Specialty Hospital. It specializes in Cardiac Surgery, Aesthetic and Reconstructive Surgery,
+                        Cancer Care, Orthopedics, Pediatrics, Mental Health and Behavioral Sciences, Endocrinology, ENT,
+                        Neurosciences, etc.
+                    </p>
+                    <ul>
+                        <li>
+                            <div class="icon">
+                                <i class="flaticon-calendar"></i>
+                            </div>
+                            <div class="content">
+                                <h5>250+ Beds Available</h5>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <i class="flaticon-drugs"></i>
+                            </div>
+                            <div class="content">
+                                <h5>80+ Doctors Availabe</h5>
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="open-button" onclick="openForm()"><strong>Book Bed</strong></button>
+
+                    <div class="form-popup" id="myForm">
+                        <form action="bed.php" class="form-container">
+
+                            <form action="bed.php" method="POST" class="contact-form">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="form-group">
+                                            <input class="form-control" id="name" name="name" placeholder="Name"
+                                                type="text" required>
+                                            <span class="alert-error"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input class="form-control" id="phone" name="phone" placeholder="Phone"
+                                                type="text" required>
+                                            <span class="alert-error"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input class="form-control" id="bed" name="bed" placeholder="No. of Beds"
+                                                type="number" required>
+                                            <span class="alert-error"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn">Book</button>
+                                <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
+                            </form>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="about-area bg-gray default-padding relative">
+
+        <!-- Shape -->
+        <div class="shape-left-top shape">
+            <img src="assets/img/shape/1.png" alt="Shape">
+        </div>
+        <!-- End Shape -->
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-6 thumb">
+                    <div class="thumb-box">
+                        <img src="assets/img/hospital/hosp3.jpeg" alt="Thumb">
+                    </div>
+                </div>
+
+                <div class="col-lg-6 info">
+                    <h5>Has been working since 2002</h5>
+                    <h2>Indraprastha Apollo Hospital New Delhi</h2>
+                    <p>
+                        Indraprastha Apollo Hospital, New Delhi is established in 1996 and is NABH, NABL & JCI
+                        accredited. This hospital includes and offers 10,000 beds across 64 hospitals, more than 2,200
+                        pharmacies, over 100 primary care & diagnostic clinics, and 115 telemedicine.
+                    </p>
+                    <ul>
+                        <li>
+                            <div class="icon">
+                                <i class="flaticon-calendar"></i>
+                            </div>
+                            <div class="content">
+                                <h5>500+ Beds Available</h5>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <i class="flaticon-drugs"></i>
+                            </div>
+                            <div class="content">
+                                <h5>150+ Doctors Availabe</h5>
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="open-button" onclick="openForm()"><strong>Book Bed</strong></button>
+
+                    <div class="form-popup" id="myForm">
+                        <form action="bed.php" class="form-container">
+
+                            <form action="bed.php" method="POST" class="contact-form">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="form-group">
+                                            <input class="form-control" id="name" name="name" placeholder="Name"
+                                                type="text" required>
+                                            <span class="alert-error"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input class="form-control" id="phone" name="phone" placeholder="Phone"
+                                                type="text" required>
+                                            <span class="alert-error"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input class="form-control" id="bed" name="bed" placeholder="No. of Beds"
+                                                type="number" required>
+                                            <span class="alert-error"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn">Book</button>
+                                <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
+                            </form>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="about-area bg-gray default-padding relative">
+
+        <!-- Shape -->
+        <div class="shape-left-top shape">
+            <img src="assets/img/shape/1.png" alt="Shape">
+        </div>
+        <!-- End Shape -->
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-6 thumb">
+                    <div class="thumb-box">
+                        <img src="assets/img/hospital/hosp4.jpeg" alt="Thumb">
+                    </div>
+                </div>
+
+                <div class="col-lg-6 info">
+                    <h5>Has been working since 1999</h5>
+                    <h2>MGM Healthcare, Chennai</h2>
+                    <p>
+                        MGM Healthcare, Chennai is a 450-bedded Super-Specialty hospital in Chennai. MGM Healthcare,
+                        Hospital has added many feathers to its cap: 110 heart transplants in a year (3rd highest in the
+                        world) 120 Pediatric Heart Transplants (Highest in Asia) India’s highest.
+                    </p>
+                    <ul>
+                        <li>
+                            <div class="icon">
+                                <i class="flaticon-calendar"></i>
+                            </div>
+                            <div class="content">
+                                <h5>350+ Beds Available</h5>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <i class="flaticon-drugs"></i>
+                            </div>
+                            <div class="content">
+                                <h5>85+ Doctors Availabe</h5>
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="open-button" onclick="openForm()"><strong>Book Bed</strong></button>
+
+                    <div class="form-popup" id="myForm">
+                        <form action="bed.php" class="form-container">
+
+                            <form action="bed.php" method="POST" class="contact-form">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="form-group">
+                                            <input class="form-control" id="name" name="name" placeholder="Name"
+                                                type="text" required>
+                                            <span class="alert-error"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input class="form-control" id="phone" name="phone" placeholder="Phone"
+                                                type="text" required>
+                                            <span class="alert-error"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input class="form-control" id="bed" name="bed" placeholder="No. of Beds"
+                                                type="number" required>
+                                            <span class="alert-error"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn">Book</button>
+                                <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
+                            </form>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="about-area bg-gray default-padding relative">
+
+        <!-- Shape -->
+        <div class="shape-left-top shape">
+            <img src="assets/img/shape/1.png" alt="Shape">
+        </div>
+        <!-- End Shape -->
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-6 thumb">
+                    <div class="thumb-box">
+                        <img src="assets/img/hospital/hosp5.jpg
+                        " alt="Thumb">
+                    </div>
+                </div>
+
+                <div class="col-lg-6 info">
+                    <h5>Has been working since 1990</h5>
+                    <h2>Kokilaben Dhirubhai Ambani Hospital Mumbai</h2>
+                    <p>
+                        Kokilaben Dhirubhai Ambani Hospital, Mumbai is one of the most modern and state-of-the-art
+                        multi-specialty tertiary care hospitals, was established in 2008 by Reliance Group of
+                        Industries. Kokilaben Hospital is accredited by the Joint Commission International (JCI).
+                    </p>
+                    <ul>
+                        <li>
+                            <div class="icon">
+                                <i class="flaticon-calendar"></i>
+                            </div>
+                            <div class="content">
+                                <h5>600+ Beds Available</h5>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <i class="flaticon-drugs"></i>
+                            </div>
+                            <div class="content">
+                                <h5>180+ Doctors Availabe</h5>
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="open-button" onclick="openForm()"><strong>Book Bed</strong></button>
+
+                    <div class="form-popup" id="myForm">
+                        <form action="bed.php" class="form-container">
+
+                            <form action="bed.php" method="POST" class="contact-form">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="form-group">
+                                            <input class="form-control" id="name" name="name" placeholder="Name"
+                                                type="text" required>
+                                            <span class="alert-error"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input class="form-control" id="phone" name="phone" placeholder="Phone"
+                                                type="text" required>
+                                            <span class="alert-error"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input class="form-control" id="bed" name="bed" placeholder="No. of Beds"
+                                                type="number" required>
+                                            <span class="alert-error"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn">Book</button>
+                                <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
+                            </form>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- End About -->
+
+    <!-- Start Footer 
+    ============================================= -->
+    <footer class="bg-dark text-light">
+        <div class="container">
+            <div class="f-items default-padding" style="
+            padding-bottom: 50px;
+            padding-top: 30px;
+        ">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 item">
+                        <div class="f-item about">
+                            <img src="assets/img/logo1.png" alt="Logo" style="width: 300px">
+                            <p>
+                                We provide easy-to-read, in-depth, authoritative medical information for consumers via
+                                its robust, user-friendly, interactive website.
+                            </p>
+                            <div class="address">
+                                <ul>
+                                    <li>
+                                        <div class="icon">
+                                            <i class="flaticon-email"></i>
+                                        </div>
+                                        <div class="info">
+                                            <h5>Email:</h5>
+                                            <span>medihelp@gmail.com</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <i class="flaticon-call"></i>
+                                        </div>
+                                        <div class="info">
+                                            <h5>Phone:</h5>
+                                            <span>+91-07-7628-4499</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="single-item col-lg-2 col-md-6 item">
+                        <div class="f-item link">
+                            <h4 class="widget-title">Department</h4>
+                            <ul>
+                                <li>
+                                    <a href="departments.html">Medecine & Health</a>
+                                </li>
+                                <li>
+                                    <a href="departments.html">Dental Care</a>
+                                </li>
+                                <li>
+                                    <a href="departments.html">Body Surgery</a>
+                                </li>
+                                <li>
+                                    <a href="departments.html">Eye Care</a>
+                                </li>
+                                <li>
+                                    <a href="departments.html">Blood cancer</a>
+                                </li>
+                                <li>
+                                    <a href="departments.html">Neurology Surgery</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="single-item col-lg-2 col-md-6 item">
+                        <div class="f-item link">
+                            <h4 class="widget-title">Helpful Links</h4>
+                            <ul>
+                                <li>
+                                    <a href="hospitals.html">Hospitals</a>
+                                </li>
+                                <li>
+                                    <a href="doctors.html">Doctors</a>
+                                </li>
+                                <li>
+                                    <a href="departments.html">Departments</a>
+                                </li>
+                                <li>
+                                    <a href="index.html#aptfrm">Book Appointment</a>
+                                </li>
+                                <li>
+                                    <a href="about-us.html">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="single-item col-lg-4 col-md-6 item">
+                        <div class="f-item branches">
+                            <div class="branches">
+                                <ul>
+                                    <li>
+                                        <strong>Open 24/7:</strong>
+                                        <span>We provide all types of medical support.<br></span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Start Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-center">
+                    <div class="col-lg-6">
+                        <p>Copyright &copy; 2022. Designed by Code Pirates</p>
+                    </div>
+                    <div class="col-lg-6 text-right social">
+                        <ul>
+                            <li>
+                                <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-youtube"></i> Youtube</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Footer Bottom -->
+    </footer>
+    <!-- End Footer -->
+
+    <!-- jQuery Frameworks
+    ============================================= -->
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.appear.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/modernizr.custom.13711.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/count-to.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/bootsnav.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
+
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+        }
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Availability</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1, h2 {
+            color: #e74c3c;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        select {
+            padding: 10px;
+            font-size: 16px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #e74c3c;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #c0392b;
+        }
+
+        #availability {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="container">
+        <h1>Blood Availability</h1>
+
+        <form>
+            <label for="location">Select Location:</label>
+            <select id="location" name="location">
+                <option value="Raipur">Raipur</option>
+                <option value="Durg">Durg</option>
+                <option value="Bhilai">Bhilai</option>
+                <option value="Raipur">Ambikapur</option>
+                <option value="Durg">Kanker</option>
+                <option value="Bhilai">Bilaspur</option>
+                <option value="Raipur">Rajnandgaon</option>
+                <option value="Durg">Jamul</option>
+                <option value="Bhilai">Kurud</option>
+                <!-- Add more location options as needed -->
+            </select>
+
+            <button type="button" onclick="checkAvailability()">Check Availability</button>
+        </form>
+
+        <div id="availability"></div>
+
+<a href="bookblood.html"> <button type="button" >Book Blood</button></a> 
+    </div>
+
+
+    <script>
+        function checkAvailability() {
+            var selectedLocation = document.getElementById('location').value;
+            // Perform an AJAX request or fetch data based on the selected location
+            // For simplicity, let's assume the data is hardcoded here
+            var availabilityData = getAvailabilityData(selectedLocation);
+
+            // Display the availability information
+            displayAvailability(availabilityData);
+        }
+
+        function getAvailabilityData(location) {
+            // In a real-world scenario, this function would fetch data from a server or database
+            // For simplicity, returning hardcoded data
+            var data = {
+                Raipur: { bloodTypeA: 10, bloodTypeB: 15, bloodTypeAB: 5, bloodTypeO: 20 },
+                Durg: { bloodTypeA: 8, bloodTypeB: 12, bloodTypeAB: 3, bloodTypeO: 18 },
+                Bhilai: { bloodTypeA: 12, bloodTypeB: 20, bloodTypeAB: 8, bloodTypeO: 25 }
+            };
+
+            return data[location] || {};
+        }
+
+        function displayAvailability(availabilityData) {
+            var availabilityElement = document.getElementById('availability');
+            availabilityElement.innerHTML = '<h2>Availability</h2>';
+
+            for (var bloodType in availabilityData) {
+                var count = availabilityData[bloodType];
+                var availabilityText = count > 0 ? 'Available: ' + count : 'Not Available';
+                var availabilityColor = count > 0 ? 'green' : 'red';
+
+                var bloodTypeElement = document.createElement('p');
+                bloodTypeElement.style.color = availabilityColor;
+                bloodTypeElement.innerText = bloodType + ': ' + availabilityText;
+
+                availabilityElement.appendChild(bloodTypeElement);
+            }
+        }
+    </script>
+
+</body>
+</html>
